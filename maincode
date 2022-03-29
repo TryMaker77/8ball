@@ -6,31 +6,78 @@ import time
 random_number = random.randint(1, 9)
 flare = random.randint(1, 9)
 #initialization
+print("""
+TryMaker77's
+888b     d888                   d8b                .d8888b.       888               888 888 
+8888b   d8888                   Y8P               d88P  Y88b      888               888 888 
+88888b.d88888                                     Y88b. d88P      888               888 888 
+888Y88888P888  8888b.   .d88b.  888  .d8888b       "Y88888"       88888b.   8888b.  888 888 
+888 Y888P 888     "88b d88P"88b 888 d88P"         .d8P""Y8b.      888 "88b     "88b 888 888 
+888  Y8P  888 .d888888 888  888 888 888           888    888      888  888 .d888888 888 888 
+888   "   888 888  888 Y88b 888 888 Y88b.         Y88b  d88P      888 d88P 888  888 888 888 
+888       888 "Y888888  "Y88888 888  "Y8888P       "Y8888P"       88888P"  "Y888888 888 888 
+                            888                                                             
+                       Y8b d88P                                                             
+                        "Y88P"                                                              
+""")
 name = input("Speak your name: ")
 question = input(name + "... What is your question?: ")
 #flare
 if flare == 1:
     print("The magic 8 ball shakes, deciding the fate of your answer...")
+    time.sleep(3)
 if flare == 2:
     print("The power inside the magic 8 ball ebbs and flows...")
+    time.sleep(3)
+if flare == 3:
+    print("The magic 8 ball fades, then surges in power...")
+    time.sleep(3)
+if flare == 4:
+    print("The letters in the 8 ball fade from nonsense, to your answer...")
+    time.sleep(3)
+if flare == 5:
+    print("The 8 ball spins in place before snapping towards you...")
+    time.sleep(3)
+if flare == 6:
+    print("The 8 ball seemingly changes colors before dulling back to black...")
+    time.sleep(3)
+if flare == 7:
+    print("The object in the 8 ball changes form to a shape you cannot describe, then back again...")
+    time.sleep(3)
+if flare == 8:
+    print("The letters in the 8 ball blur, but your eyes soon adjust...")
+    time.sleep(3)
+elif flare == 9:
+    print("The 8 ball rumbles and growls...")
+    time.sleep(3)
 #outcome
 if random_number == 1:
   print("Yes - definitley.")
+  time.sleep(1)
 elif random_number == 2:
   print("It is decidedly so.")
+  time.sleep(1)
 elif random_number == 3:
   print("Without a doubt.")
+  time.sleep(1)
 elif random_number == 4:
   print("Reply hazy, try again.")
+  time.sleep(1)
 elif random_number == 5:
   print("Ask again later.")
+  time.sleep(1)
 elif random_number == 6:
   print("It is decidedly so.")
+  time.sleep(1)
 elif random_number == 7:
   print("My sources say no.")
+  time.sleep(1)
 elif random_number == 8:
   print("Outlook not so good.")
+  time.sleep(1)
 elif random_number == 9:
   print("Very doubtful.")
-else:
-  print("error")
+  time.sleep(1)
+#ending
+print("There is your answer. Fare thee well, o' answer seeker.")
+quit()
